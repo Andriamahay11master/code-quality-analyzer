@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#dataset files
+data/raw/*
+data/processed/*
+
+#notebook outputs
+notebooks/*output.ipynb
+reports/figures/*.png
+reports/metrics/*.csv
