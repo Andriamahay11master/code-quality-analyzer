@@ -33,17 +33,41 @@ The workflow includes:
 
 ## Dataset
 
-This project uses a software code quality dataset containing repository, version, and metric-related information.
+This project uses the Software Code Quality and Source Code Metrics Dataset from Mendeley available in this link : https://data.mendeley.com/datasets/77p6rzb73n/5
+The dataset contains synthesized code smells, issues, quality, and source code metrics information of 60 versions under 10 different repositories.
 
-Depending on the version of the project, the dataset may include:
+### Dataset Contents
 
-- Repository-level information.
-- Version-level information.
-- Code quality metrics.
-- Maintainability-related attributes.
-- Structural and complexity indicators.
+The version 5 is used. The dataset includes these following information:
 
-If the dataset is too large to store directly in GitHub, only a small sample or processed version should be included in the repository. The full dataset can be downloaded separately and placed in the `data/raw/` folder.
+- Source code metrics
+- Code smells
+- Static analysis issues
+- Quality attributes
+
+### Analysis Levels
+
+The data is available at three levels:
+
+- Package level
+- Class level
+- Method level
+
+### Key Files
+
+- `repositories.csv` – Repository information (name, URL, commits, stars, forks)
+- `versions.csv` – Version information and repository growth metrics
+- `attribute-details.csv` – Description of quality attributes and metrics
+- `codesmells.csv` – Code smell rules and descriptions
+
+### Dataset Scale
+
+- 9.4 million+ lines of code analyzed
+- 173,000+ classes analyzed
+- 10 repositories
+- 60 software versions
+
+The full dataset is saved in the `data/raw/` folder.
 
 ---
 
